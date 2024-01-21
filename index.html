@@ -15,16 +15,10 @@
         <div class="game">
             <div class="game__word">
                 <ul class="game__word-text">
-                    <li class="game__word-symbol"></li>
-                    <li class="game__word-symbol"></li>
-                    <li class="game__word-symbol"></li>
-                    <li class="game__word-symbol"></li>
-                    <li class="game__word-symbol"></li>
-
                 </ul>
             </div>
             <div class="game__question">
-                <p class="game__question-text"><span class="game__question-title">Вопрос:</span> Без окон, без дверей, а в дом не пускает.</p>
+                <p class="game__question-text"><span class="game__question-title">Вопрос:</span> <span class="game__question-value">Без окон, без дверей, а в дом не пускает.</span></p>
             </div>
             <div class="game__error">
                 <p class="game__error-text">Количество ошибок: <span class="game__error-value">0/6</span></p>
@@ -57,12 +51,12 @@
                 <button class="game__key">Ч</button>
                 <button class="game__key">Ш</button>
                 <button class="game__key">Щ</button>
-                <button class="game__key">ъ</button>
-                <button class="game__key">ы</button>
-                <button class="game__key">ь</button>
-                <button class="game__key">э</button>
-                <button class="game__key">ю</button>
-                <button class="game__key">я</button>
+                <button class="game__key">Ъ</button>
+                <button class="game__key">Ы</button>
+                <button class="game__key">Ь</button>
+                <button class="game__key">Э</button>
+                <button class="game__key">Ю</button>
+                <button class="game__key">Я</button>
 
             </div>
         </div>
@@ -76,7 +70,7 @@
             <button class="modal__button">Попробовать снова</button>
         </div>
     </div>
-    <div class="modal-container modal-win none">
+    <div class="modal-container modal-victory none">
         <div class="modal">
             <img class="modal__img" src="./images/victory.gif">
             <h2 class="modal__title">Победа!</h2>
@@ -84,6 +78,8 @@
             <button class="modal__button">Сыграть ещё раз</button>
         </div>
     </div>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/word-list.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+    
 </body>
 </html>

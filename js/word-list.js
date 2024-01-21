@@ -109,5 +109,3 @@ const answerlist = [
         question: "Ложное восприятие или убеждение; обманчивый вид или впечатление"
     },
 ]
-
-export default answerlist;
