@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
             symbolElement.classList.add('game__word-symbol');
             hideWordElement.append(symbolElement);
         };
-        errorsElement.textContent = `${errorsValue}/6`;
         symbols = document.querySelectorAll('.game__word-symbol');
         modalWord.forEach(e => e.textContent = word);
         console.log(question, word);
@@ -70,6 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
         errorsValue = 0;
         guessed = 0;
 
+        errorsElement.textContent = `${errorsValue}/6`;
+        img.src = `./images/0.jpg`;
+        
         loseModal.classList.add('none');
         victoryModal.classList.add('none');
         symbols.forEach(item => item.remove());
