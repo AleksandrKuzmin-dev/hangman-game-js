@@ -1,4 +1,5 @@
 /* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -85,4 +86,203 @@ label {
 
 legend {
   display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #5E63BA;
+  padding: 20px;
+}
+
+.none {
+  display: none !important;
+}
+
+.game-container {
+  padding: 60px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 100px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hangman-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hangman-box__img {
+  max-width: 180px;
+  display: block;
+  margin-bottom: 40px;
+}
+.hangman-box__title {
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.game__word-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  list-style: "none";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.game__word-symbol {
+  font-size: 32px;
+  font-weight: 600;
+  width: 28px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000;
+}
+.game__word-symbol_guessed {
+  border-bottom: none;
+  margin-top: -20px;
+}
+.game__question {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.game__question-text {
+  font-weight: 600;
+  font-size: 18px;
+}
+.game__question-title {
+  font-weight: 500;
+}
+.game__error {
+  margin-bottom: 40px;
+}
+.game__error-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.game__error-value {
+  color: red;
+}
+.game__keyboards {
+  max-width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.game__key {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  padding: 7px;
+  background-color: #5E63BA;
+  color: white;
+  border-radius: 4px;
+  width: calc(11.1111111111% - 5px);
+}
+.game__key:hover {
+  background: #8286c9;
+}
+
+.modal-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal {
+  background: white;
+  border-radius: 10px;
+  padding: 40px 80px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.modal__img {
+  width: 130px;
+  margin-bottom: 20px;
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.modal__text {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.modal__value {
+  color: #5E63BA;
+  font-weight: 600;
+}
+.modal__button {
+  padding: 12px 23px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #5E63BA;
+  color: white;
 }/*# sourceMappingURL=style..css.map */
